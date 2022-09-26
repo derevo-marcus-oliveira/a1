@@ -1,0 +1,96 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#hall {
+    display: flex;
+    background-color: rgb(36, 31, 31);
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    position: absolute;
+    width: 100vw;
+    border: 1px solid #fff;
+
+}
+
+.sun{
+    position: absolute;
+    width: 500px;
+    border: 1px solid green;
+    height: 500px;
+    border-radius:500px;
+}
+
+.raios{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+}
+
+.arg-raio1 {
+    border: 1px solid blue;
+    animation: movSol1 6s linear infinite;
+}
+
+.arg-raio2 {
+    border: 1px solid blue;
+    animation: movSol2 4.5s linear infinite;
+}
+
+.arg-raio3 {
+    border: 1px solid blue;
+    animation: movSol3 3s linear infinite 0.35s;
+}
+
+.arg-raio4 {
+    transform: rotate(22.5deg);
+    border: 1px solid blue;
+    animation: movSol4 1.5s linear infinite 0.35s;
+}
+
+@keyframes movSol1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+@keyframes movSol2 {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(315deg);
+    }
+}
+@keyframes movSol3 {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(269deg);
+    }
+}
+@keyframes movSol4 {
+    from {
+        transform: rotate(135deg);
+    }
+
+    to {
+        transform: rotate(224deg);
+    }
+}
