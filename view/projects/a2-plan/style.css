@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: rgb(36,31,31);
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hall {
+    position: absolute;;
+    width: 350px;
+    height: 350px;
+    border-radius: 300px;
+    animation: mov 4s linear 0 ;
+    animation-iteration-count: infinite;
+}
+
+.ball {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+
+}
+
+.subBall{
+    position: relative;
+    transform: translate(100%, 100%);
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+@keyframes mov {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
