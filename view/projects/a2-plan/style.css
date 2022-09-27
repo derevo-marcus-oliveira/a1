@@ -20,26 +20,44 @@ body {
     width: 350px;
     height: 350px;
     border-radius: 300px;
-    animation: mov 4s linear 0 ;
-    animation-iteration-count: infinite;
-}
-
-.ball {
-    border: 1px solid #fff;
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-
+    animation: mov 4s linear infinite ;
 }
 
 .subBall{
-    position: relative;
     transform: translate(100%, 100%);
     border: 1px solid #fff;
     width: 30px;
     height: 30px;
     border-radius: 30px;
 }
+
+.ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+
+}
+/* 
+.subBallBall {    
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    animation: mov 2s linear infinite reverse;
+
+}
+
+.subBallBallBall{
+    transform: translate(100%, 100%);
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+ */
 
 @keyframes mov {
     from {
