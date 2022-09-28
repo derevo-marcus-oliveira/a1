@@ -54,10 +54,10 @@ body {
 .planet-sun {
     position: relative;
 
-    left: 47%;
-    top: -4%;
+    left: 46%;
+    top: -6%;
 
-    border: 1px solid #fff;
+    border: 5px solid #fff;
 
     border-radius: 50%;
     width: 10px;    
@@ -70,7 +70,6 @@ body {
     left: -40%;
     top: -40%;
 
-    border: 1px solid #fff;
     box-shadow: 0 0 5px 1px orange;
 
     width: 15px;    
@@ -79,11 +78,19 @@ body {
 }
 
 .a-raio {    
-    animation: mov 1s linear infinite paused;
+    animation: mov 8s linear infinite ;
 }
 
 .b-raio {    
-    animation: mov 1s linear infinite paused;
+    animation: mov 8s linear 1s infinite ;
+}
+
+.c-raio {    
+    animation: mov 8s linear 0.5s infinite ;
+}
+
+.d-raio {    
+    animation: mov 8s linear 1.5s infinite ;
 }
 
 
